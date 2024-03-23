@@ -46,7 +46,7 @@
 .chat-btn {
   position: fixed;
   right: 15px;
-  bottom: 75px;
+  bottom: 135px;
   z-index: 9999999;
   /* background-color: #ffffff; */
 }
@@ -54,7 +54,7 @@
 .call-btn {
   position: fixed;
   right: 15px;
-  bottom: 10px;
+  bottom: 70px;
   z-index: 9999999;
   /* background-color: #ffffff; */
 }
