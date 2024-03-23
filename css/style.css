@@ -38,20 +38,20 @@
   padding: 10px 0;
   text-align: center;
   color: #acacac;
-  font-size: 12.22px
+  font-size: 12.22px;
 }
 
 .chat-btn {
   position: fixed;
   right: 15px;
-  bottom: 135px;
+  bottom: 185px;
   z-index: 9999999;
 }
 
 .call-btn {
   position: fixed;
   right: 15px;
-  bottom: 70px;
+  bottom: 120px;
   z-index: 9999999;
 }
 
