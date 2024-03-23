@@ -29,6 +29,20 @@
 
 --------------------------------------------------------------------------------*/
 
+.call-to-action-footer {
+  position: fixed;
+  /* right: 0px; */
+  bottom: 0px;
+  width: 100%;
+  z-index: 9999999;
+  background-color: #2a2f3c;
+  padding: 10px 0;
+  text-align: center;
+  color: #acacac;
+  font-size: 12.22px
+  /* background-color: #ffffff; */
+}
+
 .chat-btn {
   position: fixed;
   right: 15px;
