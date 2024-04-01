@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- TITLE -->
+    <title>Suhaana Challenge | Suhaana Ghar</title>
+    <link rel="canonical" href="https://suhaanaghar.com/suhaana_challenge.html"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="Suhaana Challenge - Find out if you have a Suhaana connection">
+    <meta name="robots" content="index, follow">
+
+    <!-- GOOGLE FONT -->
+    <!-- <link href='http://fonts.googleapis.com/css?family=Hind:400,300,500,600%7cMontserrat:400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+
+    <!-- CSS LIBRARY -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-hilltericon.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/settings.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="./assets/css/simple-line-icons.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-57PGCSY91X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-57PGCSY91X');
+    </script>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WCL8MBVN');</script>
+<!-- End Google Tag Manager -->
+<style>
+
+@media (max-width: 1000px) {
+  .challenge-container {
+    height: 300px;
+    display: flex;
+  }
+
+  .box1 {
+    position: absolute;
+    width: 90%;
+    height: 300px;
+  }
+
+  .button-select {
+    width:100%;
+  }
+
+  #btn-1 {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 200px;
+  }
+
+  #btn-2 {
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 200px;
+  }
+
+  #generate_code {
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #phone_number {
+    width: 200px;
+  }
+
+}
+
+@media (min-width: 1001px) {
+  .challenge-container {
+    height: 100px;
+    display: flex;
+  }
+
+  .box1 {
+    position: absolute;
+    width: 80%;
+    height: 100px;
+  }
+
+  .button-select {
+    width:100%;
+  }
+
+  #btn-1 {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #btn-2 {
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #generate_code {
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #phone_number {
+    width: 200px;
+  }
+
+}
+
+.caveat-font {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+
+</style>
+</head>
+
+   <body> <!--<![endif]-->
+
+     <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCL8MBVN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <span class="preloader-dot"></span>
+    </div>
+    <!-- END / PRELOADER -->
+
+    <!-- PAGE WRAP -->
+    <div id="page-wrap">
+
+        <!-- HEADER -->
+                <header id="header">
+
+                  <!-- HEADER TOP -->
+                  <div class="header_top">
+                      <div class="container">
+                          <div class="header_left float-left">
+                               <span><a href="https://www.facebook.com/SuhaanaGhar" target="_blank" style="color:#acacac;"><span class="icon-social-facebook"></span></a></span>
+                               <span><a href="https://www.instagram.com/suhaanaghar_shangarh/" target="_blank" style="color:#acacac;"><span class="icon-social-instagram"></span></a></span>
+      						             <span><span class="icon-phone"></span><a href="tel: +918240443268" style="color:#acacac;">+91 8240443268</a></span>
+                               <span><span class="icon-phone"></span><a href="tel: +919073757780" style="color:#acacac;">+91 9073757780</a></span>
+                               <span><span class="icon-envelope-open"></span> <a href="mailto: suhaanaghar@gmail.com" style="color:#acacac;" class="href"> suhaanaghar@gmail.com</a></span>
+                          </div>
+                          <div class="header_right float-right">
+                          </div>
+                      </div>
+                  </div>
+                  <!-- END / HEADER TOP -->
+
+            <input type="hidden" id="selected" value="1" />
+
+            <!-- HEADER LOGO & MENU -->
+            <div class="header_content" id="header_content">
+
+                <div class="container">
+                    <!-- HEADER LOGO -->
+                    <div class="header_logo">
+                        <a href="#"><img src="images/logo1.jpg" alt=""></a>
+                        <span style="height:50px; width:50px; font-size: 16px; margin-left:2px;">Suhaana Ghar - where moments become memories</span>
+                    </div>
+
+                    <!-- END / HEADER LOGO -->
+
+                    <!-- HEADER MENU -->
+                    <nav class="header_menu">
+                        <ul class="menu">
+                            <li>
+                                <a href="index.html">Home </a>
+
+                            </li>
+
+                            <li>
+                                <a href="suhaana_challenge.html">Suhaana Challenge</a>
+                            </li>
+
+                            <li>
+                                <a href="photo_gallery.html">Gallery</a>
+                            </li>
+
+                            <li>
+                                <a href="room_details.html">Rooms</a>
+
+                            </li>
+
+                            <li>
+                                <a href="amenities.html">Amenities</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <!-- END / HEADER MENU -->
+
+                    <!-- MENU BAR -->
+                    <span class="menu-bars">
+                        <span></span>
+                    </span>
+                    <!-- END / MENU BAR -->
+
+                </div>
+            </div>
+            <!-- END / HEADER LOGO & MENU -->
+
+        </header>
+        <!-- END / HEADER -->
+
+        <br /><br />
+
+        <section class="section_page-gallery">
+            <div class="container">
+                <div class="gallery">
+
+                    <!-- GALLERY CONTENT -->
+                    <div class="gallery-content">
+
+                      <h2 class="caveat-font"> Suhaana Challenge </h2>
+                      <br>
+                      <p style="font-size:18px;">
+                        At Suhaana ghar, we believe each place has a soul and if we can connect the right souls with the right places, magical things can happen. So, let's embark on a quest to find out if Suhaana Ghar and Shangarh resonate with your soul by answering 3 simple questions. At the end you will find out if there is a Suhaana connection. And for a very special match, you can even get a very special discount. We recommend you to answer the questions by being honest with yourself and let the magic begin!
+                      </p>
+
+                    <div class="challenge-container">
+                      <div class="box1">
+                        <div class="row">
+                          <div id="question-div" class="col-md-12 col-lg-12 col-xs-12" style="text-align:center; font-size: 18px;">
+                             How would you describe your travel style?
+                          </div>
+                        </div>
+                        <br>
+                        <div id="answers-div" class="row" style="font-size: 18px;">
+                          <div class="col-md-5 col-lg-5 col-xs-5" style="text-align:center;">
+                            <button id="btn-1" class="button-select" style="font-size: 18px;">A peaceful getaway in the mountains close to nature with friends and family</button>
+                          </div>
+                          <div class="col-md-2 col-lg-2 col-xs-2" style="text-align:center; font-size: 18px;">OR</div>
+                          <div class="col-md-5 col-lg-5 col-xs-5" style="text-align:center;">
+                            <button id="btn-2" class="button-select" style="font-size: 18px;">A packed itinerary with lots of things to do like adventure sports or hiking</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!-- GALLERY CONTENT -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+
+
+
+		<footer id="footer">
+
+
+
+            <!-- FOOTER CENTER -->
+            <div class="footer_center">
+                <div class="container">
+
+                    <div class="row">
+
+                      <div class="col-xs-12 col-lg-5">
+                          <div class="widget widget_logo">
+                              <div class="widget-logo">
+                                  <div class="img">
+                                      <a href="#"><img src="images/logo1.jpg" alt=""></a>
+                                  </div>
+                                  <div class="text">
+                                    <p><span class="icon-location-pin"></span>Village Goshti, Shangarh, HP 175023</p>
+                                    <p><span class="icon-phone"></span> +91 8240443268, +91 9073757780</p>
+                                    <p><span class="icon-envelope-open"></span> <a href="mailto: suhaanaghar@gmail.com"> suhaanaghar@gmail.com</a></p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                        <div class="col-xs-4 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title caveat-font">Conditions Apply</h4>
+                                <ul>
+                                  <li><a href="terms_and_conditions.html">Terms & Conditions</a></li>
+                                  <!-- <li><a href="#">Cancellation Policy</a></li>
+                                  <li><a href="#">Refund Policy</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title caveat-font">ABOUT</h4>
+                               <p style="color:white;">
+							   Discover the beauty of Himachal with Suhaana Ghar Homestay - Where every moment is a memory and every stay feels like coming home.
+							   </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- END / FOOTER CENTER -->
+			 <!-- FOOTER TOP -->
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- WIDGET SOCIAL -->
+                        <div class="col-lg-12 col-lg-offset-1">
+                            <div class="social">
+                                <div class="social-content">
+                                    <span><a href="https://www.facebook.com/SuhaanaGhar" target="_blank" style="color:#acacac;"><span class="icon-social-facebook"></span></a></span>
+                                    <span><a href="https://www.instagram.com/suhaanaghar_shangarh/" target="_blank" style="color:#acacac;"><span class="icon-social-instagram"></span></a></span>
+           						              <span><a href="tel: +918240443268" style="color:#acacac;"><span class="icon-phone"></span></a></span>
+           						              <span><a href="mailto: suhaanaghar@gmail.com" style="color:#acacac;" class="href"><span class="icon-envelope-open"></span></a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END / WIDGET SOCIAL -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- END / FOOTER TOP -->
+
+            <!-- FOOTER BOTTOM -->
+            <div class="footer_bottom">
+                <div class="container">
+                    <p>&copy; 2024 Suhaana Ghar All rights reserved</p>
+                </div>
+            </div>
+            <!-- END / FOOTER BOTTOM -->
+
+            <div class="footer_bottom">
+                    <p style="color:rgba(0, 0, 0, 0); height: 40px;">...</p>
+            </div>
+
+            <!-- CALL TO ACTION BOTTOM -->
+            <div class="call-to-action-footer">
+                <div class="container">
+                    <p>Are you interested to learn more about Suhaana Ghar? Connect with us by calling <a href="tel:+918240443268" target="_blank" style="color:#fff;"><img src="images/icons8-telephone-64.png" style="height:40px;" alt="telephone icon and button that can be clicked to make a call to the Suhaana Ghar business number"/> 8240443268</a> or over <a href="https://api.whatsapp.com/send?phone=918240443268" target="_blank"><img src="images/whatsapp_chat_btn.png" style="width:140px; height:40px;" alt="whatsapp icon and button that can be clicked to start a chat with Suhaana Ghar business Whatsapp number"/></a></p>
+                </div>
+            </div>
+            <!-- END / CALL TO ACTION BOTTOM -->
+
+            <div class="chat-btn">
+            	<a href="https://api.whatsapp.com/send?phone=918240443268" target="_blank"><img src="images/icons8-whatsapp-50.png" alt="whatsapp icon and button that can be clicked to start a chat with Suhaana Ghar business Whatsapp number"/></a>
+            </div>
+
+            <div class="call-btn">
+            	<a href="tel:+918240443268" target="_blank"><img src="images/icons8-telephone-64.png" alt="telephone icon and button that can be clicked to make a call to the Suhaana Ghar business number"/></a>
+            </div>
+
+        </footer>
+        <!-- END / FOOTER -->
+
+    </div>
+    <!-- END / PAGE WRAP -->
+
+    <!-- LOAD JQUERY -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script>
+
+
+    let count = 0;
+
+      $(document).ready(function(){
+
+        var question_1 = "How would you describe your travel style?";
+        var answer_1_1 = "A peaceful getaway in the mountains close to nature with friends and family";
+        var answer_1_2 = "A packed itinerary with lots of things to do like adventure sports or hiking";
+
+        var question_2 = "What inspires you more?";
+        var answer_2_1 = "A humble dwelling with majestic views right from your window";
+        var answer_2_2 = "A luxurious dwelling with somewhat limited views";
+
+        var question_3 = "What are you looking for in your next trip to the mountains?";
+        var answer_3_1 = "Experience luxury similar to branded hotels and resorts by paying relatively high prices";
+        var answer_3_2 = "Immerse yourself in nature, and experience the local culture, traditions and cuisine at very reasonable prices";
+
+        var selection_str = "";
+
+        $("#btn-1, #btn-2").click(function(e){
+
+          if ($("#question-div").html().trim() == question_1){
+            $("#question-div").html(question_2);
+            if (e.target.id == "btn-1") {
+              selection_str = selection_str.concat("1");
+              count++;
+            } else if (e.target.id == "btn-2") {
+              selection_str = selection_str.concat("2");
+              count++;
+            }
+            $("#btn-1").html(answer_2_1);
+            $("#btn-2").html(answer_2_2);
+          } else if ($("#question-div").html().trim() == question_2){
+            $("#question-div").html(question_3);
+            if (e.target.id == "btn-1") {
+              selection_str = selection_str.concat("3");
+              count++;
+            } else if (e.target.id == "btn-2") {
+              selection_str = selection_str.concat("4");
+              count++;
+            }
+            $("#btn-1").html(answer_3_1);
+            $("#btn-2").html(answer_3_2);
+          } else if ($("#question-div").html().trim() == question_3){
+            if (e.target.id == "btn-1") {
+              selection_str = selection_str.concat("5");
+              count++;
+            } else if (e.target.id == "btn-2") {
+              selection_str = selection_str.concat("6");
+              count++;
+            }
+
+            switch (selection_str){
+              case "135":
+                txt = "You mentioned that you are interested in staying at a peaceful and humble dwelling with majestic views. Suhaana Ghar offers a peaceful mountain getaway at affordable prices. So we think you might enjoy Suhaana Ghar for your next trip.  However, you won't find the luxurious accommodations of a branded hotel or resort. If this resonates with you, then please continue to chat with our booking representative who can help you in making your next trip memorable. <br> Continue to Whatsapp by clicking this button <a href='https://api.whatsapp.com/send?phone=918240443268' target='_blank'><img src='images/whatsapp_chat_btn.png' style='width:140px; height:40px;' alt='whatsapp icon and button that can be clicked to start a chat with Suhaana Ghar business Whatsapp number'/></a>"
+                break
+              case "235":
+                txt = "Suhaana Ghar offers the usual comforts of a homestay at very affordable prices. However, you won't find the luxurious accommodations of a branded hotel or resort. If this resonates with you then please click the button below to chat with our booking representative. Also, if you have multiple days to spend and looking for a packed itinerary, then please let our representative know about this so that they can help you in planning an itinerary accordingly. <br> Continue to Whatsapp by clicking this button <a href='https://api.whatsapp.com/send?phone=918240443268' target='_blank'><img src='images/whatsapp_chat_btn.png' style='width:140px; height:40px;' alt='whatsapp icon and button that can be clicked to start a chat with Suhaana Ghar business Whatsapp number'/></a>"
+                break
+              case "145":
+                txt = "You mentioned that you like a peaceful place but also looking for luxury. Suhaana Ghar offers the usual comforts of a homestay at very affordable prices. However, we should let you know that you won't find the luxurious accommodations of a branded hotel or resort while staying at Suhaana Ghar. If this resonates with you then please click the button below to chat with our booking representative. <br> Continue to Whatsapp by clicking this button <a href='https://api.whatsapp.com/send?phone=918240443268' target='_blank'><img src='images/whatsapp_chat_btn.png' style='width:140px; height:40px;' alt='whatsapp icon and button that can be clicked to start a chat with Suhaana Ghar business Whatsapp number'/></a>"
+                break
+              case "245":
+                txt = "Since you mentioned that you are looking for luxurious accommodations, we recommend you to keep searching for a hotel or resort which can provide you the luxuries that you are looking for. All the best on your search. If you are still interested to chat with us to learn more about Suhaana Ghar or Shangarh, please click the button below to chat with our booking representative. <br> Continue to Whatsapp by clicking this button <a href='https://api.whatsapp.com/send?phone=918240443268' target='_blank'><img src='images/whatsapp_chat_btn.png' style='width:140px; height:40px;' alt='whatsapp icon and button that can be clicked to start a chat with Suhaana Ghar business Whatsapp number'/></a>"
+                break
+              case "146":
+                txt = "You seem to enjoy a peaceful place where you can immerse yourself in nature, and experience the local culture, traditions and cuisine at reasonable prices. Suhaana Ghar checks all these criteria at the comforts of a budget homestay. You also picked a luxurious accommodation over majestic views. If you think majestic views are more important to you than luxury, then you can continue to chat with our booking representative who can help you in making your next trip memorable. <br> Continue to Whatsapp by clicking this button <a href='https://api.whatsapp.com/send?phone=918240443268' target='_blank'><img src='images/whatsapp_chat_btn.png' style='width:140px; height:40px;' alt='whatsapp icon and button that can be clicked to start a chat with Suhaana Ghar business Whatsapp number'/></a>"
+                break
+              case "136":
+                txt = "It's a perfect match! Suhaana Ghar offers exactly what you are looking for. At Suhaana Ghar you can enjoy a peaceful and humble dwelling with majestic views where you can immerse yourself in nature, and experience the local culture, traditions and cuisine at reasonable prices. To reward you for this perfect match, we are pleased to offer you a special discount code."
+                break
+              case "236":
+                txt = "You seem to enjoy a peaceful and humble dwelling with majestic views where you can immerse yourself in nature, and experience the local culture, traditions and cuisine at reasonable prices. Suhaana Ghar checks all these criteria and we think you should be able to enjoy this magical place. You can now continue to chat with our booking representative who can help you in making your next trip memorable. Also, if you have multiple days to spend and looking for a packed itinerary, then please let our representative know about this so that they can help you in planning an itinerary accordingly. <br> Continue to Whatsapp by clicking this button <a href='https://api.whatsapp.com/send?phone=918240443268' target='_blank'><img src='images/whatsapp_chat_btn.png' style='width:140px; height:40px;' alt='whatsapp icon and button that can be clicked to start a chat with Suhaana Ghar business Whatsapp number'/></a>"
+                break
+              case "246":
+                txt = "Suhaana Ghar offers a peaceful mountain getaway at affordable prices where you can immerse yourself in in nature, and experience the local culture, traditions and cuisine at reasonable prices. So we think you might enjoy Suhaana Ghar for your next trip. You can now continue to chat with our booking representative who can help you in making your next trip memorable. <br> Continue to Whatsapp by clicking this button <a href='https://api.whatsapp.com/send?phone=918240443268' target='_blank'><img src='images/whatsapp_chat_btn.png' style='width:140px; height:40px;' alt='whatsapp icon and button that can be clicked to start a chat with Suhaana Ghar business Whatsapp number'/></a>"
+            }
+
+            var answer_div_txt = "<div class='col-md-12 col-xs-12'>Please enter your 10 digit phone number below to generate your personalized discount code. You can provide this discount code to our booking representative to avail the special offer we have for you. <br > <div id='code-generator-div' style='text-align: center;'><form><input type='text' id='phone_number' minlength='10' maxlength='10' title='Enter a valid phone number.' placeholder='Enter 10 digit phone number' /> <input type='submit' style='font-size: 18px;' id='generate_code' value='Generate code' /></form></div></div>"
+
+            $("#question-div").html(txt);
+            if (selection_str == "136") {
+              $("#answers-div").html(answer_div_txt);
+            } else {
+              $("#answers-div").html("");
+            }
+
+            $('#phone_number').keypress(function (e) {
+                var charCode = (e.which) ? e.which : event.keyCode;
+                if (String.fromCharCode(charCode).match(/[^0-9]/g)){
+                    return false;
+                }
+            });
+
+            $("#generate_code").click(function(){
+              if (/^\d{10}$/.test($("#phone_number").val())) {
+                var code = Math.round(Number($("#phone_number").val()) / Number(selection_str));
+                $("#answers-div").html("<div class='col-md-12 col-xs-12'>Congratulations! You have unlocked a special discount of 10%! Your personalized discount code is: <b>SUHAANAMATCH" + code + "</b>. You can now continue to chat with our booking representative and provide this code to receive this exclusive discount! Continue to Whatsapp by clicking this button <a href='https://api.whatsapp.com/send?phone=918240443268&text=Hi%2C%20I%20just%20won%20the%20Suhaana%20Challenge%20and%20received%20a%2010%25%20discount.%20My%20discount%20code%20is%20SUHAANAMATCH"+code+".%20Can%20you%20help%20me%20plan%20my%20next%20trip%20to%20Suhaana%20ghar%20and%20redeem%20this%20code%3F' target='_blank'><img src='images/whatsapp_chat_btn.png' style='width:140px; height:40px;' alt='whatsapp icon and button that can be clicked to start a chat with Suhaana Ghar business Whatsapp number'/></a><div style='height:20px;'></div></div>");
+              }
+            });
+          }
+        });
+      });
+    </script>
+
+</body>
+
+</html>
