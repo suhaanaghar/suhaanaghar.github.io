@@ -3,26 +3,30 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://suhaanaghar.com/index.html</loc>
-    <lastmod>2024-04-04</lastmod>
+    <lastmod>2024-04-05</lastmod>
   </url>
   <url>
     <loc>https://suhaanaghar.com/suhaana_challenge.html</loc>
-    <lastmod>2024-04-04</lastmod>
+    <lastmod>2024-04-05</lastmod>
   </url>
   <url>
     <loc>https://suhaanaghar.com/room_details.html</loc>
-    <lastmod>2024-04-04</lastmod>
+    <lastmod>2024-04-05</lastmod>
   </url>
   <url>
     <loc>https://suhaanaghar.com/photo_gallery.html</loc>
-    <lastmod>2024-04-04</lastmod>
+    <lastmod>2024-04-05</lastmod>
   </url>
   <url>
     <loc>https://suhaanaghar.com/terms_and_conditions.html</loc>
-    <lastmod>2024-04-04</lastmod>
+    <lastmod>2024-04-05</lastmod>
   </url>
   <url>
     <loc>https://suhaanaghar.com/amenities.html</loc>
-    <lastmod>2024-04-04</lastmod>
+    <lastmod>2024-04-05</lastmod>
+  </url>
+  <url>
+    <loc>https://suhaanaghar.com/guest_reviews.html</loc>
+    <lastmod>2024-04-05</lastmod>
   </url>
 </urlset>

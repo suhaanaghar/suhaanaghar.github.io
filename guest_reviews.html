@@ -5,13 +5,13 @@
 <head>
     <meta charset="utf-8">
     <!-- TITLE -->
-    <title>Amenities | Suhaana Ghar</title>
-    <link rel="canonical" href="https://suhaanaghar.com/amenities.html"/>
+    <title>Guest Reviews | Suhaana Ghar</title>
+    <link rel="canonical" href="https://suhaanaghar.com/guest_reviews.html"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="description" content="Amenities for Suhaana Ghar which is a homestay in Shangarh, Himachal Pradesh">
+    <meta name="description" content="Guest Reviews for Suhaana Ghar which is a homestay in Shangarh, Himachal Pradesh">
     <meta name="robots" content="index, follow">
 
     <!-- GOOGLE FONT -->
@@ -71,13 +71,86 @@ body {
   font-size: 18px;
 }
 
+.masonry {
+    --masonry-gap: 1rem;
+    --masonry-brick-width: 250px;
+    column-gap: var(--masonry-gap);
+    column-fill: initial;
+    column-width: var(--masonry-brick-width);
+}
+
+.masonry > * {
+    break-inside: avoid;
+    margin-bottom: var(--masonry-gap);
+}
+
+@supports(grid-template-rows: masonry) {
+    .masonry {
+      display: grid;
+      gap: var(--masonry-gap);
+      grid-template-rows: masonry;
+      grid-template-columns: repeat(auto-fill, minmax(var(--masonry-brick-width), 1fr));
+      align-tracks: stretch;
+    }
+
+    .masonry > * {
+        margin-bottom: initial;
+    }
+}
+
+/* some styling not important */
+.masonry {
+    background: #fff;
+    padding: 2rem;
+}
+/* .brick:nth-child(4n - 7) {
+    background: #5A363A;
+}
+
+.brick:nth-child(4n - 6) {
+    background: #82212C;
+}
+
+.brick:nth-child(4n - 5) {
+    background: #3A3E41;
+}
+
+.brick:nth-child(4n - 4) {
+    background: #292A2B;
+} */
+.brick {
+    /* color: black; */
+    padding:1rem;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+.review-img {
+  width: 50px;
+  height: 50px;
+}
+
+.icon-img {
+  width: 30px;
+  height: 30px;
+}
+
+.blue-link {
+  color: #00f;
+  font-weight: 800;
+}
+
+.light-blue-link {
+  color: #00f;
+  font-weight: 300;
+}
+
 </style>
 
-</head>
+  </head>
 
-   <body> <!--<![endif]-->
+     <body> <!--<![endif]-->
 
-     <!-- Google Tag Manager (noscript) -->
+       <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCL8MBVN"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -128,6 +201,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <ul class="menu">
                             <li>
                                 <a href="index.html">Home </a>
+
                             </li>
 
                             <li>
@@ -142,6 +216,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <a href="room_details.html">Rooms</a>
 
                             </li>
+
 
                             <li>
                                 <a href="amenities.html">Amenities</a>
@@ -168,54 +243,69 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </header>
         <!-- END / HEADER -->
 
-        <!-- SUB BANNER -->
-        <section class="section-sub-banner awe-parallax bg-room-1">
-            <div class="awe-overlay"></div>
-            <div class="sub-banner">
-                <div class="container">
-                    <div class="text text-center">
-                        <p style="height: 100px;"></p>
-                        <h2 class="caveat-font">AMENITIES</h2>
-                        <p style="font-size:20px;">To make your stay more comfortable</p>
-                        <p style="height: 100px;"></p>
+        <br /><br />
+
+        <!-- GALLERY -->
+        <section class="section_page-gallery">
+            <div class="container">
+                <div class="gallery">
+
+                    <!-- GALLERY CONTENT -->
+                    <div class="gallery-content">
+
+                      <h2 class="caveat-font"> Guest Reviews </h2>
+                      <br>
+                      <div class="masonry">
+                        <div class="brick">
+                          <span class="num"><img src="images/review_bhuvnesh.png" class="review-img" /></span> &nbsp;
+                          <a href="https://maps.app.goo.gl/jm4pNVWcZfuowSkz7" target="_blank" class="blue-link">Bhuvnesh Bareth</a><br ><img src="images/5_star_photo.png" /><br ><br >Arguably one of the best homestay to stay in Shangarh. Mesmerizing view of the famous meadows and snow clad mountains left us spellbound. Hosts were very kind and helpful. They treated us like their own family. Hari Om bhaiya and his family also prepared very delicious homemade food. Definitely going there again soon.
+                          <br><br><img src="images/google_icon.png" class="icon-img" /> <a href="https://maps.app.goo.gl/jm4pNVWcZfuowSkz7" target="_blank" class="light-blue-link">View on Google</a>
+                        </div>
+                        <div class="brick">
+                          <span class="num"><img src="images/review_sarika_kumari.png" class="review-img" /></span>&nbsp;
+                          <a href="https://maps.app.goo.gl/q8HmPW7m4rtGQeQw5" target="_blank" class="blue-link">Sarika Kumari Pandey</a><br ><img src="images/5_star_photo.png" /><br ><br > Recently me and my husband had the pleasure of staying in Suhaana ghar and I can vouch that it exceeded my expectations. The property is located in a picturesque location and the rooms at Suhaana ghar has one of the best views of Shangarh meadows as well as snow clad mountains.Sitting by the veranda just outside our room and having a scrumptious breakfast with an breathtaking views was a delight in itself.The hosts were very warm,friendly and helpful who always went an extra mile which made our experience even better.I would recommend Suhaana ghar to all travellers who are looking for a peacefull stay for few days in a rustic mountain village away from hustle and bustle of crowded tourist locations.Would like to visit again soon!
+                          <br><br><img src="images/google_icon.png" class="icon-img" /> <a href="https://maps.app.goo.gl/q8HmPW7m4rtGQeQw5" target="_blank" class="light-blue-link">View on Google</a>
+                        </div>
+                        <div class="brick">
+                          <span class="num"><img src="images/review_nilanjana.png" class="review-img" /></span> &nbsp;
+                          <a href="https://maps.app.goo.gl/Bn8CAU5TLmA8WFt56" target="_blank" class="blue-link">Nilanjana Sen</a><br ><img src="images/5_star_photo.png" /><br ><br >I really enjoyed my Holi vacation at Suhanaghar Sainj Valley. My words are not enough to explain the divinity, tranquility, and beauty of this place, and the people with whom I spent my three days are very close to my heart and are so simple and innocent, which I'll cherish for many years to come. Of course, the services were also too good, guided with each little thing so carefully, tasty local food, traditional attire, photos and many more... special thanks to Avik Gupta and Miss Pooja
+                          <br><br><img src="images/google_icon.png" class="icon-img" /> <a href="https://maps.app.goo.gl/Bn8CAU5TLmA8WFt56" target="_blank" class="light-blue-link">View on Google</a>
+                        </div>
+                        <div class="brick">
+                          <span class="num"><img src="images/review_sanjib.png" class="review-img" /></span> &nbsp;
+                          <a href="https://maps.app.goo.gl/zz3ijFgjSNkTa8GM7" target="_blank" class="blue-link">Sanjib Mandal</a><br ><img src="images/5_star_photo.png" /><br ><br >If you want to spend some quality time in the lap of nature which is away from other crowded regions of Himachal, this is the right place for you.I completely enjoyed my stay at Suhaana Ghar in Shangarh,Sainj valley. The real attraction of this place is its breathtaking views of the meadows and snow capped mountains from the property.
+The homestay hosts were very cordial and helpful which made my stay even more memorable. I enjoyed their company while spending time in the Meadows and visiting Mahadev Temple where they were telling me the history as well the mythological background of this place.
+I would recommend this place for a peaceful and enjoyable stay amidst nature's luxurious beauty.
+<br><br><img src="images/google_icon.png" class="icon-img" /> <a href="https://maps.app.goo.gl/zz3ijFgjSNkTa8GM7" target="_blank" class="light-blue-link">View on Google</a>
+</div>
+                        <div class="brick">
+                          <span class="num"><img src="images/review_vaibhav_bhardwaj.png" class="review-img" /></span> &nbsp;
+                          <a href="https://maps.app.goo.gl/jm4pNVWcZfuowSkz7" target="_blank" class="blue-link">Vaibhav Bhardwaj</a><br ><img src="images/5_star_photo.png" /><br ><br >Great location with the views of the Meadows and the Snow Peaks of Himalayas. Rooms were cozy and clean.
+                          <br><br><img src="images/google_icon.png" class="icon-img" /> <a href="https://maps.app.goo.gl/jm4pNVWcZfuowSkz7" target="_blank" class="light-blue-link">View on Google</a>
+                        </div>
+
+                        <div class="brick">
+                          <span class="num"><img src="images/review_siddhant_singh.png" class="review-img" /></span> &nbsp;
+                          <a href="https://maps.app.goo.gl/DkykWuYKRPy9WJBQ9" target="_blank" class="blue-link">Siddhant Singh</a><br ><img src="images/5_star_photo.png" /><br ><br >Really wonderful experience, just like family ❤️
+                          <br><br><img src="images/google_icon.png" class="icon-img" /> <a href="https://maps.app.goo.gl/DkykWuYKRPy9WJBQ9" target="_blank" class="light-blue-link">View on Google</a>
+                        </div>
+                         <div class="brick">
+                           <span class="num"><img src="images/review_rahul_kumar.png" class="review-img" /></span> &nbsp;
+                           <a href="https://maps.app.goo.gl/ngCS1spgG561sbo89" target="_blank" class="blue-link">Rahul Kumar</a><br ><img src="images/5_star_photo.png" /><br ><br >A serene and lovely destination ideal for peaceful relaxation. The hosts extend a warm and welcoming atmosphere, making guests feel truly valued. The standout feature of this place is its location, which offers a unique selling point (USP). Adjacent to a picturesque meadow, this natural setting further enhances the charm of the place. I highly recommend this location to anyone seeking a laid-back weekend getaway.
+                           <br><br><img src="images/google_icon.png" class="icon-img" /> <a href="https://maps.app.goo.gl/ngCS1spgG561sbo89" target="_blank" class="light-blue-link">View on Google</a>
+                         </div>
                     </div>
+
+                    </div>
+                    <!-- GALLERY CONTENT -->
+
                 </div>
             </div>
         </section>
-        <!-- END / SUB BANNER -->
+        <!-- END / GALLERY -->
 
-        <!-- ROOM -->
-        <section class="section-room bg-white">
-            <div class="container" style="text-align:center; font-size:20px;">
 
-                    <div class="row">
-                      <div class="col-md-6 col-xs-6"> <i class="sl icon-check"></i> Hot Water </div>
-                      <div class="col-md-6 col-xs-6"> <i class="sl icon-check"></i> Power Backup </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                      <div class="col-md-6 col-xs-6"> <i class="sl icon-check"></i> Free Parking </div>
-                      <div class="col-md-6 col-xs-6"> <i class="sl icon-check"></i> Free wifi </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                      <div class="col-md-6 col-xs-6"> <i class="sl icon-check"></i> Electric Kettle </div>
-                      <div class="col-md-6 col-xs-6"> <i class="sl icon-check"></i> Room Heater </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                      <div class="col-md-6 col-xs-6"> <i class="sl icon-check"></i> Indoor Games </div>
-                      <div class="col-md-6 col-xs-6"> <i class="sl icon-check"></i> Bon Fire </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                      <div class="col-md-6 col-xs-6"> <i class="sl icon-check"></i> Room Service </div>
-                      <div class="col-md-6 col-xs-6"> <i class="sl icon-check"></i> House Keeping </div>
-                    </div>
 
-            </div>
-        </section>
-        <!-- END / ROOM -->
 
         <!-- FOOTER -->
 
@@ -238,9 +328,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                       <a href="#"><img src="images/logo1.jpg" alt=""></a>
                                   </div>
                                   <div class="text">
-                                    <p><span class="icon-location-pin"></span>Village Goshti, Shangarh, HP 175023</p>
-                                    <p><span class="icon-phone"></span> +91 8240443268, +91 9073757780</p>
-                                    <p><span class="icon-envelope-open"></span> <a href="mailto: suhaanaghar@gmail.com"> suhaanaghar@gmail.com</a></p>
+                                      <p><span class="icon-location-pin"></span>Village Goshti, Shangarh, HP 175023</p>
+                                      <p><span class="icon-phone"></span> +91 8240443268, +91 9073757780</p>
+                                      <p><span class="icon-envelope-open"></span> <a href="mailto: suhaanaghar@gmail.com"> suhaanaghar@gmail.com</a></p>
                                   </div>
                               </div>
                           </div>
@@ -250,9 +340,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="widget">
                                 <h4 class="widget-title caveat-font">Conditions Apply</h4>
                                 <ul>
-                                  <li><a href="terms_and_conditions.html">Terms & Conditions</a></li>
-                                  <!-- <li><a href="#">Cancellation Policy</a></li>
-                                  <li><a href="#">Refund Policy</a></li> -->
+                                    <li><a href="#" class="caveat-font">Terms & Conditions</a></li>
+                                    <!-- <li><a href="#">Cancellation Policy</a></li>
+									                  <li><a href="#">Refund Policy</a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -332,7 +422,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-select.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
     <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
     <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
@@ -343,6 +432,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
     <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+
 </body>
 
 </html>
