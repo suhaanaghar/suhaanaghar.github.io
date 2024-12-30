@@ -136,6 +136,77 @@ body {
   font-size: 18px;
 }
 
+.holiday-popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.holiday-popup-content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    width: 500px;
+    text-align: center;
+    animation: popupFade 0.5s ease-in-out;
+}
+
+.holiday-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.holiday-popup-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.holiday-popup-text {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+@keyframes popupFade {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .holiday-popup-content {
+        width: 85%;
+        padding: 15px;
+    }
+    
+    .holiday-popup-text {
+        font-size: 20px;
+    }
+}
+
 </style>
 
 </head>
@@ -147,6 +218,10 @@ body {
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCL8MBVN"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+    <div class="holiday-banner">
+        <span class="holiday-text">🎅 Happy New Year & Merry Christmas! Celebrate the festive season with us at Suhaana Ghar 🎊</span>
+    </div>
 
     <!-- PRELOADER -->
     <div id="preloader">
@@ -246,7 +321,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="banner-slider" id="banner-slider">
 
               <!-- ITEM -->
-             <div class="slider-item" data-image="images/cover_photo_new_3.jpg">
+             <div class="slider-item" data-image="images/cover_photo_new_3_wide.jpg">
                <div class="slider-text text-center" style="color:#fff; font-size:22px; font-weight:500; transform: translateY(100%);"><span style="background-color: rgba(50, 50, 50, 0.4);"><i>“Together we blossom, together we grow.”</i>
 ― Unknown</span></div>
               </div>
@@ -266,7 +341,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <!-- ITEM -->
 
                 <!-- ITEM -->
-               <div class="slider-item" data-image="images/cover_photo_new_1.jpg">
+               <div class="slider-item" data-image="images/cover_photo_new_1_wide.jpg">
                  <div class="slider-text text-center" style="color:#fff; font-size:22px; font-weight:500; transform: translateY(100%);"><span style="background-color: rgba(50, 50, 50, 0.4);"><i>“Therefore am I still a lover of the meadows and the woods, and mountains”</i>
 ― William Wordsworth</span></div>
                 </div>
@@ -947,7 +1022,7 @@ get a bus or hire a cab for the further commute.
     <script type="text/javascript" src="js/jquery.form.min.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <!-- Custom jQuery -->
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts_full.js"></script>
 
     <script>
     var mapOptions = {
@@ -981,7 +1056,69 @@ function onMarkerClick(e) {
 
 marker.on('click', onMarkerClick);
 
+
+// function isMobileDevice() {
+//   return window.matchMedia("(max-width: 1000px)").matches; // Adjust width as needed
+// }
+//
+// document.addEventListener('DOMContentLoaded', function () {
+//   const imageContainer1 = document.getElementsById('cover_photo_1');
+//   const imageContainer2 = document.getElementsById('cover_photo_2');
+//   const imageContainer3 = document.getElementsById('cover_photo_3');
+//   const imageContainer4 = document.getElementsById('cover_photo_4');
+//   const imageContainer5 = document.getElementsById('cover_photo_5');
+//   const imageContainer6 = document.getElementsById('cover_photo_6');
+//   if (isMobileDevice()) {
+//     imageContainer1.css('background-image', "images/cover_photo_new_3.jpg");
+//     imageContainer2.css('background-image', "images/cover_photo_1.jpg");
+//     imageContainer3.css('background-image', "images/cover_photo_2.jpg");
+//     imageContainer4.css('background-image', "images/cover_photo_new_1.jpg");
+//     imageContainer5.css('background-image', "images/cover_photo_new_2.jpg");
+//     imageContainer6.css('background-image', "images/cover_photo_4.jpg");
+//   } else {
+//       imageContainer1.css('background-image', "images/cover_photo_new_3_wide.jpg");
+//       imageContainer2.css('background-image', "images/cover_photo_1.jpg");
+//       imageContainer3.css('background-image', "images/cover_photo_2.jpg");
+//       imageContainer4.css('background-image', "images/cover_photo_new_1_wide.jpg");
+//       imageContainer5.css('background-image', "images/cover_photo_new_2.jpg");
+//       imageContainer6.css('background-image', "images/cover_photo_4.jpg");
+//   }
+//
+// });
+
     </script>
+
+<script>
+function showHolidayPopup() {
+    document.getElementById('holidayPopup').style.display = 'flex';
+}
+
+function closeHolidayPopup() {
+    document.getElementById('holidayPopup').style.display = 'none';
+}
+
+// Show popup with a slight delay after page load
+window.addEventListener('load', function() {
+    setTimeout(showHolidayPopup, 2000); // 2 second delay
+});
+
+// Close popup when clicking outside
+document.getElementById('holidayPopup').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeHolidayPopup();
+    }
+});
+</script>
+
+<div id="holidayPopup" class="holiday-popup-overlay">
+    <div class="holiday-popup-content">
+        <button class="holiday-popup-close" onclick="closeHolidayPopup()">×</button>
+        <img src="/images/holiday_wish_img.png" alt="Merry Christmas and Happy New Year" class="holiday-popup-image">
+        <div class="holiday-popup-text caveat-font">
+            Wishing you a Merry Christmas and a Happy New Year from Suhaana Ghar!
+        </div>
+    </div>
+</div>
 
 </body>
 
