@@ -11020,3 +11020,40 @@ width:76px !important;
 height:65px !important;
 }
 	}
+
+.holiday-banner {
+    background: linear-gradient(45deg, #1a472a, #2d5a40);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.holiday-banner::before {
+    content: "🎄";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.holiday-banner::after {
+    content: "✨";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.holiday-text {
+    display: inline-block;
+    animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
