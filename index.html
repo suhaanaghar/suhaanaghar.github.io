@@ -207,6 +207,65 @@ body {
     }
 }
 
+/* Video Testimonials Styles */
+.video-testimonials {
+    padding: 80px 0;
+}
+
+.video-testimonial-item {
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.video-testimonial-wrapper {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.video-testimonial-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 177.78%; /* 9:16 Aspect Ratio for YouTube Shorts */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.video-testimonial-info {
+    text-align: center;
+}
+
+.video-testimonial-info h4 {
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.video-testimonial-info p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
 </style>
 
 </head>
@@ -504,6 +563,100 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         </section>
         <!-- END / ACCOMMODATIONS -->
+
+        <!-- VIDEO TESTIMONIALS -->
+        <section class="video-testimonials bg-white">
+            <div class="container">
+                <br><br>
+                <h2 class="heading text-center caveat-font" style="margin-bottom: 50px;">Video Testimonials</h2>
+                <div class="row">
+                    <!-- Video Testimonial 1 -->
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="video-testimonial-item">
+                            <div class="video-testimonial-wrapper">
+                                <div class="video-container">
+                                    <!-- Replace YOUR_VIDEO_ID_1 with actual YouTube video ID -->
+                                    <iframe src="https://www.youtube.com/embed/wKSF27NGC7c" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <!-- <div class="video-testimonial-info">
+                                    <h4 class="caveat-font">Guest Name 1</h4>
+                                    <p>Brief description about their experience</p>
+                                    <a href="https://youtube.com/shorts/wKSF27NGC7c" target="_blank" class="youtube-link">
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Testimonial 2 -->
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="video-testimonial-item">
+                            <div class="video-testimonial-wrapper">
+                                <div class="video-container">
+                                    <!-- Replace YOUR_VIDEO_ID_2 with actual YouTube video ID -->
+                                    <iframe src="https://www.youtube.com/embed/_fhTfjn342w" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <!-- <div class="video-testimonial-info">
+                                    <h4 class="caveat-font">Guest Name 2</h4>
+                                    <p>Brief description about their experience</p>
+                                    <a href="https://youtube.com/shorts/_fhTfjn342w" target="_blank" class="youtube-link">
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Testimonial 3 -->
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="video-testimonial-item">
+                            <div class="video-testimonial-wrapper">
+                                <div class="video-container">
+                                    <!-- Replace YOUR_VIDEO_ID_2 with actual YouTube video ID -->
+                                    <iframe src="https://www.youtube.com/embed/qpXHYUsPesk" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <!-- <div class="video-testimonial-info">
+                                    <h4 class="caveat-font">Guest Name 2</h4>
+                                    <p>Brief description about their experience</p>
+                                    <a href="https://youtube.com/shorts/qpXHYUsPesk" target="_blank" class="youtube-link">
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Testimonial 4 -->
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="video-testimonial-item">
+                            <div class="video-testimonial-wrapper">
+                                <div class="video-container">
+                                    <!-- Replace YOUR_VIDEO_ID_2 with actual YouTube video ID -->
+                                    <iframe src="https://www.youtube.com/embed/x7oVmZEjchY" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <!-- <div class="video-testimonial-info">
+                                    <h4 class="caveat-font">Guest Name 2</h4>
+                                    <p>Brief description about their experience</p>
+                                    <a href="https://youtube.com/shorts/x7oVmZEjchY" target="_blank" class="youtube-link">
+                                    </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END / Video Testimonials -->
 
 
 		  <!-- TEAM -->
